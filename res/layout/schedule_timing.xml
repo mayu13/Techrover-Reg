@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    
+    
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical" >
+           
+        <TextView
+            android:id="@+id/textbatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            android:text="Batch No:" />
+   
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textStart"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date" />
+
+            <EditText
+                android:id="@+id/editStart"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="@drawable/edittext_bg" />
+
+            <ImageView
+                android:id="@+id/imageStartdate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/cal" />
+        </LinearLayout>
+   			    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+   		<TextView
+        android:id="@+id/textStop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="End Date" />
+    	<EditText
+        android:id="@+id/editStop"
+        android:layout_width="120dp"
+       	android:layout_height="25dp" 
+       	 android:background="@drawable/edittext_bg" />
+    	<ImageView
+   		android:id="@+id/imageStopdate"
+   	    android:layout_width="40dp"
+   		android:layout_height="40dp"
+   		android:layout_marginStart="0dp"
+   		android:src="@drawable/cal" />
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <TextView
+          android:id="@+id/textView3"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text="Days of Week" />
+        <Spinner
+          android:id="@+id/spinnerdate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+     </LinearLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+        <TextView
+          android:id="@+id/texttrainer"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text="Trainer Name" />
+         <Spinner
+          android:id="@+id/spinnertrainer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+       <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:numStars="5"
+        android:stepSize="0.1"/>        
+       <TextView
+          android:id="@+id/textfeedback"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="Detail feedback" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:orientation="horizontal">       
+        <RatingBar
+       		 android:id="@+id/ratingBar2"
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content" 
+             style="?android:attr/ratingBarStyleSmall"
+             android:numStars="5"
+             android:stepSize="0.1"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>          
+          
+      </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+        android:orientation="horizontal" >s
+       <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="Submit" />
+       </LinearLayout>
+
+      <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/tech" />
+     
+
+    </LinearLayout>
+        </ScrollView>
+
+       
+</LinearLayout>

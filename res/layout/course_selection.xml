@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/background" >
+
+    
+   	<ScrollView
+   	 	 android:id="@+id/scrollView1"
+   	 	 android:layout_width="match_parent"
+   	 	 android:layout_height="wrap_content" >
+
+   	 	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >   
+    
+   		 <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Interested in following courses :" />
+
+   
+    	<CheckBox
+        android:id="@+id/checkPHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="PHP" />
+   		<CheckBox
+        android:id="@+id/checkANDROID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Android" />
+    	<CheckBox
+        android:id="@+id/checkCSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="HTML5/CSS3" />
+   	 	<CheckBox
+        android:id="@+id/checkAUTOCAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Auto Cad" />
+   	 	<CheckBox
+        android:id="@+id/checkLIVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Live Project" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+      	<CheckBox
+        android:id="@+id/checkOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Others" />
+   	    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="wrap_content"/>
+     </LinearLayout>
+
+   
+    	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Select Day to Start training" />
+
+    	
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >      
+         <TextView
+           android:id="@+id/datetextview"
+           android:layout_width="150dp"
+           android:layout_marginLeft="10dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/edittext_bg"
+           android:text="Current date" />
+          <ImageView
+           android:id="@+id/calimageView"
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:src="@drawable/cal" />
+      </LinearLayout>
+   
+     
+      
+
+          <Button
+              android:id="@+id/buttonsubmit"
+              android:layout_width="100dp"
+              android:layout_height="40dp"
+              android:layout_marginTop="25dp"
+              android:layout_marginLeft="100dp"
+              android:gravity="center"
+              android:text="Submit" />
+    
+     <ImageView
+   	    android:id="@+id/imageView1"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="150dp"
+   	    android:src="@drawable/tech" />
+      
+   	 </LinearLayout>
+   	 
+  </ScrollView>
+
+   
+</LinearLayout>

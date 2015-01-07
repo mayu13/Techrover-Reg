@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sqlite"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tech"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                  <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".Login_page"
+            android:label="@string/login">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/List_activity" >
+        </activity>
+        
+        <activity
+            android:name=".Call_eventActivity"
+            android:label="@string/title_activity_call_event" >
+        </activity>
+        
+        <activity
+            android:name=".Single_item_view"
+            android:label="@string/title_activity_single_item_view" >
+        </activity>
+        
+          <activity
+            android:name=".Course_selection"
+            android:label="@string/course_name" >
+        </activity>
+        
+           <activity
+            android:name=".Schedule_timing"
+            android:label="@string/schedule" >
+        </activity>s
+        
+            <activity
+            android:name=".Feed_back"
+            android:label="@string/feedback" >
+        </activity>
+        
+              <activity
+            android:name=".After_no_reg"
+            android:label="@string/no_reg_page" >
+        </activity>
+        
+                <activity
+            android:name=".Thank_you"
+            android:label="@string/no_reg_page" >
+        </activity>
+        
+        
+         
+        
+        
+        
+    </application>
+
+</manifest>
